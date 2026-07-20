@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samdisha Singh | Science Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            max-width: 650px;
+            margin: 0 auto;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            padding: 18px;
+            text-align: center;
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        nav a {
+            margin: 0 12px;
+            color: #222;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #222;
+            padding-bottom: 8px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 22px;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card a {
+            color: #1f5da8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #ffffff;
+            border-top: 1px solid #dddddd;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Samdisha Singh</h1>
+        <p>
+            Life Sciences student interested in genetics, ancient DNA,
+            biotechnology, science communication, and data analysis.
+        </p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#writing">Writing</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am an incoming Life Sciences student at McMaster University.
+                My interests include genetics, ancient DNA, de-extinction,
+                biotechnology, research, and science communication.
+            </p>
+        </section>
+
+        <section id="writing">
+            <h2>Science Writing</h2>
+
+            <div class="project-grid">
+
+                <article class="card">
+                    <h3>De-extinction: What Are We Bringing Back?</h3>
+                    <p>
+                        A series examining the science, identity questions,
+                        and ecological implications of de-extinction.
+                    </p>
+                    <a href="#">Read the series →</a>
+                </article>
+
+                <article class="card">
+                    <h3>How CRISPR Works</h3>
+                    <p>
+                        A beginner-friendly explanation of CRISPR gene editing
+                        and its potential applications.
+                    </p>
+                    <a href="#">Read the article →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <article class="card">
+                    <h3>Can We Predict Our Own Test Scores?</h3>
+                    <p>
+                        A data project comparing students' predicted
+                        performance with their actual test results.
+                    </p>
+                    <a href="#">View project →</a>
+                </article>
+
+                <article class="card">
+                    <h3>Science Media Projects</h3>
+                    <p>
+                        A collection of science videos, visual explainers,
+                        and editing experiments.
+                    </p>
+                    <a href="#">View projects →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Connect with me through
+                <a href="#">LinkedIn</a>
+                or view my work on
+                <a href="#">GitHub</a>.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Samdisha Singh</p>
+    </footer>
+
+</body>
+</html>
