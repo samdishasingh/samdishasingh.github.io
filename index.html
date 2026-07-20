@@ -11,6 +11,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -20,14 +24,14 @@
         }
 
         header {
-            background-color: #ffffff;
             padding: 80px 20px;
             text-align: center;
+            background-color: #ffffff;
             border-bottom: 1px solid #dddddd;
         }
 
         header h1 {
-            margin-bottom: 10px;
+            margin: 0 0 10px;
             font-size: 2.8rem;
         }
 
@@ -39,11 +43,12 @@
         }
 
         nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
             padding: 18px;
             text-align: center;
             background-color: #ffffff;
-            position: sticky;
-            top: 0;
             border-bottom: 1px solid #dddddd;
         }
 
@@ -54,7 +59,8 @@
             font-weight: bold;
         }
 
-        nav a:hover {
+        nav a:hover,
+        nav a:focus {
             text-decoration: underline;
         }
 
@@ -66,11 +72,12 @@
 
         section {
             margin-bottom: 60px;
+            scroll-margin-top: 85px;
         }
 
         h2 {
-            border-bottom: 2px solid #222;
             padding-bottom: 8px;
+            border-bottom: 2px solid #222;
         }
 
         .project-grid {
@@ -80,8 +87,8 @@
         }
 
         .card {
-            background-color: #ffffff;
             padding: 22px;
+            background-color: #ffffff;
             border: 1px solid #dddddd;
             border-radius: 10px;
         }
@@ -90,22 +97,45 @@
             margin-top: 0;
         }
 
-        .card a {
+        .card a,
+        #contact a {
             color: #1f5da8;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .card a:hover {
+        .card a:hover,
+        .card a:focus,
+        #contact a:hover,
+        #contact a:focus {
             text-decoration: underline;
         }
 
         footer {
-            text-align: center;
             padding: 30px 20px;
+            text-align: center;
+            color: #666;
             background-color: #ffffff;
             border-top: 1px solid #dddddd;
-            color: #666;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
         }
     </style>
 </head>
@@ -120,7 +150,7 @@
         </p>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#writing">Writing</a>
         <a href="#projects">Projects</a>
@@ -149,7 +179,13 @@
                         A series examining the science, identity questions,
                         and ecological implications of de-extinction.
                     </p>
-                    <a href="https://communiqq.blogspot.com/2026/07/de-extinction-what-are-we-bringing-back.html">Read the series →</a>
+                    <a
+                        href="https://communiqq.blogspot.com/2026/07/de-extinction-what-are-we-bringing-back.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Read the series →
+                    </a>
                 </article>
 
                 <article class="card">
@@ -158,7 +194,13 @@
                         A beginner-friendly explanation of CRISPR gene editing
                         and its potential applications.
                     </p>
-                    <a href="https://communiqq.blogspot.com/2025/08/crispr-findeditreplace-tool-for-gene.html">Read the article →</a>
+                    <a
+                        href="https://communiqq.blogspot.com/2025/08/crispr-findeditreplace-tool-for-gene.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Read the article →
+                    </a>
                 </article>
 
             </div>
@@ -175,16 +217,13 @@
                         A data project comparing students' predicted
                         performance with their actual test results.
                     </p>
-                    <a href="https://communiqq.blogspot.com/2026/06/can-we-actually-predict-our-own-test_0372076134.html">View project →</a>
-                </article>
-
-                <article class="card">
-                    <h3>Science Media Projects</h3>
-                    <p>
-                        A collection of science videos, visual explainers,
-                        and editing experiments.
-                    </p>
-                    <a href="#">View projects →</a>
+                    <a
+                        href="https://communiqq.blogspot.com/2026/06/can-we-actually-predict-our-own-test_0372076134.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View project →
+                    </a>
                 </article>
 
             </div>
@@ -194,9 +233,21 @@
             <h2>Contact</h2>
             <p>
                 Connect with me through
-                <a href="https://www.linkedin.com/in/samdishasingh">LinkedIn</a>
+                <a
+                    href="https://www.linkedin.com/in/samdishasingh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
                 or view my work on
-                <a href="#">GitHub</a>.
+                <a
+                    href="https://github.com/samdishasingh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>.
             </p>
         </section>
 
